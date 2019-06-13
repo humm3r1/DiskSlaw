@@ -16,7 +16,7 @@ while getopts "s:c::v:" opt; do
 done
 
 #Install prerequisites
-sudo apt-get install syslinux squashfs-tools genisoimage debootstrap syslinux memtest86 -y
+sudo apt-get install syslinux squashfs-tools genisoimage debootstrap syslinux memtest86 isolinux -y
 
 #Install base OS
 if [ ! -d ds_root ]; then
