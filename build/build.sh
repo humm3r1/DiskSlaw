@@ -113,4 +113,4 @@ fi
 if [ -f diskslaw.iso ]; then
     rm diskslaw.iso
 fi
-genisoimage -D -r -V "ds_cd_base" -cache-inodes -J -l -b isolinux/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o diskslaw.iso ds_cd_base/
+genisoimage -D -r -V "ds_cd_base" -cache-inodes -J -l -b /usr/lib/ISOLINUX/isolinux.bin -c isolinux/boot.cat -no-emul-boot -boot-load-size 4 -boot-info-table -o diskslaw.iso ds_cd_base/
