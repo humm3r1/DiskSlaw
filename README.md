@@ -68,3 +68,11 @@ Overview of use
     imgargs vmlinuz boot=live dhcp fetch=http://<WEBSERVER>/casper/filesystem.squashfs nouveau.modeset=0 nomodeset --
     boot
    ```
+   
+   
+   To build this fork:
+   
+   1) Install Debian 9 Stretch OS
+   2) Install git and clone this repo
+   3) chmod +x build.sh
+   4) ./build.sh to begin running it.
