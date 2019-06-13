@@ -35,10 +35,10 @@ cp /etc/resolv.conf ds_root/etc/resolv.conf
 
 #Setup autologin on TTY1 and 2
 mkdir -p ds_root/etc/systemd/system/getty@tty{1,2,3,4}.service.d
-cp systemd/getty\@tty1.service ds_root/etc/systemd/system/getty@tty1.service.d/override.conf
-cp systemd/getty\@tty2.service ds_root/etc/systemd/system/getty@tty2.service.d/override.conf
-cp systemd/getty\@tty2.service ds_root/etc/systemd/system/getty@tty3.service.d/override.conf
-cp systemd/getty\@tty2.service ds_root/etc/systemd/system/getty@tty4.service.d/override.conf
+cp systemd/getty\@tty1.service "ds_root/etc/systemd/system/getty@tty1.service.d/override.conf"
+cp systemd/getty\@tty2.service "ds_root/etc/systemd/system/getty@tty2.service.d/override.conf"
+cp systemd/getty\@tty2.service "ds_root/etc/systemd/system/getty@tty3.service.d/override.conf"
+cp systemd/getty\@tty2.service "ds_root/etc/systemd/system/getty@tty4.service.d/override.conf"
 
 
 #Setup root to autolaunch our diskslaw script
