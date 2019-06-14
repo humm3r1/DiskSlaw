@@ -6,5 +6,5 @@ def disable_terminal_blanking():
 
 #Wrapper around pm-suspend to put computer to sleep
 def suspend_computer():
-    proc = Popen(['rtcwake -s 5'])
+    proc = Popen(['rtcwake -s 5 -m disk'])
     proc.communicate()
